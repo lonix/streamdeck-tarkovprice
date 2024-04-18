@@ -1,0 +1,15 @@
+{
+  "Actions": [
+    {
+      "Name": "com.yourname.eftpricechecker.action",
+      "Icon": "icon.png",
+      "Title": "EFT Price Checker",
+      "PropertyInspectorPath": "propertyInspector.html",
+      "States": [
+        {
+          "Image": "DefaultImage.png"
+        }
+      ]
+    }
+  ]
+}

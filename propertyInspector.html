@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>EFT Item Price Checker</title>
+</head>
+
+<body>
+  <h2>Enter the Item Name:</h2>
+  <input type="text" id="itemName" value="Physical bitcoin">
+  <button onclick="saveSettings()">Save</button>
+
+  <script type="text/javascript">
+    const sdWrapper = require('streamdeck-wrapper');
+
+    function saveSettings() {
+      const itemName = document.getElementById('itemName').value;
+      sdWrapper.setSettings({
+        itemName
+      });
+      sdWrapper.sendToPlugin({ event: "setItemName", itemName });
+    }
+  </script>
+</body>
+
+</html>
